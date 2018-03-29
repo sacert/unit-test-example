@@ -4,7 +4,7 @@
 This project includes some examples of how to write unit tests using [pytest](https://docs.pytest.org/en/latest/) 
 and check test coverage using [pytest-cov](https://pypi.python.org/pypi/pytest-cov).
 
-####Benefits of Testing
+#### Benefits of Testing
 
 Testing is widely used in the software industry and is known to have the following benefits: 
 
@@ -20,14 +20,14 @@ Testing is widely used in the software industry and is known to have the followi
 (Adapted from this [site](https://dzone.com/articles/top-8-benefits-of-unit-testing))
 
 
-####Installation
+#### Installation
 First, install the dependencies of this project with pip:
 
 ```bash
 $ pip install -r requirements.txt
 ```
 
-####How to Run Tests With Coverage
+#### How to Run Tests With Coverage
 
 Checking test coverage allows you to verify whether your tests are really covering every line and branch in your code.  
 
@@ -68,7 +68,7 @@ Each line in the test coverage report has four columns:
 You can exclude files or folders in your `.coveragerc` file. 
 This is why `tests.py` is not included in the coverage report.
 
-####How to Run Tests Without Coverage
+#### How to Run Tests Without Coverage
 
 To run the tests without coverage, type the following at the command line:
 
@@ -91,20 +91,20 @@ tests.py ....                                                                   
 
 ```
 
-####Notes
+#### Notes
 
-#####Unit vs. Integration vs. Functional Tests?
+##### Unit vs. Integration vs. Functional Tests?
 This [article](https://codeutopia.net/blog/2015/04/11/what-are-unit-testing-integration-testing-and-functional-testing/) 
 provides a good overview of the differences between these types of tests.
 
-#####100% Test Coverage?
+##### 100% Test Coverage?
 
 Full test coverage is ideal but not always practical. 
 Some parts of the code are difficult to test or are not part of the critical functionality of the system.
 Less than 100% test coverage is often acceptable. A rule of thumb is to shoot for at least 80% test coverage 
 and have functional tests for the critical operation of the entire system. 
 
-#####Humble Objects 
+##### Humble Objects 
 
 Developers often run into the problem of writing code that is difficult to test. 
 This most commonly happens at the external interfaces, such as the database or UI. 
@@ -113,13 +113,13 @@ To combat this problem, you can use the
 [Humble Objects](https://ieftimov.com/tdd-humble-object) pattern. 
 This boils down to making the difficult-to-test parts of the code do as little as possible.
 
-#####TDD for Scientific Computing
+##### TDD for Scientific Computing
 
 This is a great overview of test-driven development for scientific computing.
 
 [Clune, Test Driven Development of Scientific Models, NASA Goddard Space Flight Center, 2012](https://sea.ucar.edu/sites/default/files/TDD_For_Scientists.pdf)
 
-#####Testing Approximate Results
+##### Testing Approximate Results
  
 Functions that use floating-point numbers often do not produce the results you expect to full precision. 
 Floating-point results that originate from different processes may be off in the last few decimal places, 
