@@ -125,3 +125,11 @@ Functions that use floating-point numbers often do not produce the results you e
 Floating-point results that originate from different processes may be off in the last few decimal places, 
 causing tests for strict equality to fail. Numpy offers a great 
 [test support suite](https://docs.scipy.org/doc/numpy-1.13.0/reference/routines.testing.html) to handle these cases.
+
+##### Testing API
+
+As systems evolve, production code gets refactored. If you have written tests for all of your production code, then there is often
+resistance to refactoring code, as this will also require modifying your tests. To assist with this problem, it's often a good idea to
+decouple your tests from your production code with a Testing API. The general idea is explained in [this article]
+(http://blog.cleancoder.com/uncle-bob/2017/03/03/TDD-Harms-Architecture.html) by "Uncle Bob" Martin and is hashed out in this [StackExchange question]
+(https://softwareengineering.stackexchange.com/questions/353149/tdd-decouple-test-code-from-production-code-avoiding-one-to-tone-correspondenc?newreg=17869c0fd96d4be2b230fbff277c387a).
